@@ -26,8 +26,8 @@ const aws = tool({
 
 export default create({
   tools: [aws],
-  // model: anthropic("claude-3-7-sonnet-latest"),
   password: "password",
-  model: google("gemini-2.5-pro-exp-03-25"),
-  // model: openai("o3-mini"),
+  // model: anthropic("claude-3-5-sonnet-20241022"),
+  // Alternative Google model (requires GOOGLE_GENERATIVE_AI_API_KEY):
+  model: google("gemini-3-flash-preview"),
 })
